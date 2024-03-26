@@ -29,6 +29,15 @@
   color: #61dafb;
 }
 
+/* Custom CSS */
+body {
+  scroll-behavior: smooth;
+  scrollbar-width: thin;
+  scrollbar-color: #55323285 #282c34;
+  -webkit-font-smoothing: antialiased;
+  -moz-scrollbar-width: thin;
+}
+
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);

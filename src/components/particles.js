@@ -4,87 +4,77 @@ import Particles from "react-tsparticles";
 import { loadSlim } from "tsparticles-slim";
 
 const ParticleComponent = () => {
-  const options = useMemo(() => {
-    return {
+  const options = useMemo(
+    () => ({
       background: {
         color: {
           value: "black",
         },
       },
-      fpsLimit: 60,
+      fpsLimit: 120,
       interactivity: {
-        detectsOn : "window",
         events: {
           onClick: {
             enable: true,
-            mode: "push",
+            mode: "repulse",
           },
           onHover: {
             enable: true,
-            mode: "repulse",
+            mode: "grab",
           },
-          resize: true,
         },
         modes: {
-          bubble: {
-            distance: 400,
-            duration: 2,
-            opacity: 0.8,
-            size: 40,
-          },
           push: {
-            quantity: 4,
-          },
-          repulse: {
             distance: 200,
-            duration: 0.4,
+            duration: 15,
+          },
+          grab: {
+            distance: 150,
           },
         },
       },
       particles: {
         color: {
-          value: "#00FFFF",
+          value: "#ffffff",
+          color: "white",
         },
         links: {
-          color: "#F0E497",
+          color: "#ffffff",
           distance: 150,
           enable: true,
-          opacity: 0.5,
-          width: 1,
-        },
-        collisions: {
-          enable: true,
+          opacity: 0.2,
+          width: 1.5,
         },
         move: {
           direction: "none",
           enable: true,
-          outMode: "bounce",
+          outModes: {
+            default: "bounce",
+          },
           random: true,
-          speed: 3,
+          speed: 1,
           straight: false,
         },
         number: {
           density: {
             enable: true,
-            value_area: 800,
           },
-          value: 80,
+          value: 150,
         },
         opacity: {
-          value: 0.5,
+          value: 1.5,
         },
         shape: {
           type: "circle",
         },
         size: {
-          random: true,
-          value: 5,
+          value: { min: 1, max: 3 },
         },
       },
       detectRetina: true,
-    };
-  }, []);
-
+    }),
+    []
+  );
   const particlesInit = useCallback((engine) => {
     loadSlim(engine);
   }, []);
