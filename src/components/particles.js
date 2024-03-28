@@ -7,71 +7,68 @@ const ParticleComponent = () => {
   const options = useMemo(
     () => ({
       background: {
-        color: {
-          value: "black",
-        },
+        color: "black"
       },
       fpsLimit: 120,
       interactivity: {
         events: {
           onClick: {
             enable: true,
-            mode: "repulse",
+            mode: "repulse"
           },
           onHover: {
             enable: true,
-            mode: "grab",
-          },
+            mode: "grab"
+          }
         },
         modes: {
           push: {
             distance: 200,
-            duration: 15,
+            duration: 15
           },
           grab: {
-            distance: 150,
-          },
-        },
+            distance: 150
+          }
+        }
       },
       particles: {
         color: {
-          value: "#ffffff",
-          color: "white",
+          value: ["#03dac6", "#ff0266", "#000000"],
+          maxParticles: 43,
+          connectParticles: false
         },
         links: {
-          color: "#ffffff",
+          color: ["#faebd7", "#03dac6", "#ff0266"],
           distance: 150,
           enable: true,
           opacity: 0.2,
-          width: 1.5,
+          width: 1.5
         },
         move: {
-          direction: "none",
           enable: true,
           outModes: {
-            default: "bounce",
+            default: "bounce"
           },
           random: true,
-          speed: 1,
-          straight: false,
+          speed: 1
         },
         number: {
           density: {
-            enable: true,
+            enable: true
           },
-          value: 150,
+          value: 150
         },
         opacity: {
-          value: 1.5,
+          value: 1.5
         },
         shape: {
-          type: "circle",
+          type: "circle"
         },
         size: {
-          value: { min: 1, max: 3 },
-        },
+          value: { min: 1, max: 3 }
+        }
       },
-      detectRetina: true,
+      detectRetina: true
     }),
     []
   );

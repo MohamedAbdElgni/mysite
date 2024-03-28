@@ -87,7 +87,7 @@ function Header() {
 
   return (
     <div className="container-fluid vh-100 d-flex justify-content-center align-items-center animate__animated animate__backInDown">
-      <ParticleComponent />
+      {/* <ParticleComponent /> */}
       <div className="row w-100">
         <div className="col-12 col-sm-12 d-flex justify-content-center align-items-center flex-column">
           <div className="text-center p-4 rounded">
