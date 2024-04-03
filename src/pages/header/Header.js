@@ -27,7 +27,7 @@ function Header() {
 
   const socialIcons = (
     <div
-      className="text-light text-center d-flex justify-content-evenly social-icons animate__animated animate__fadeIn animate__delay-.5s"
+      className="text-light  text-center d-flex justify-content-evenly social-icons animate__animated animate__fadeIn animate__delay-.5s"
       style={{
         position: "absolute",
         bottom: "18%",
@@ -88,9 +88,9 @@ function Header() {
   }, []);
 
   return (
-    <div className="container-fluid vh-100 d-flex justify-content-center align-items-center animate__animated animate__backInDown">
-      <ParticleComponent />
-      <div className="row w-100">
+    <div className="container-fluid bg-dark vh-100 d-flex justify-content-center align-items-center animate__animated animate__backInDown">
+      {/* <ParticleComponent /> */}
+      <div className="row w-100 bg-dark">
         <div className="col-12 col-sm-12 d-flex justify-content-center align-items-center flex-column">
           <div className="text-center p-4 rounded">
             <Animatediv>

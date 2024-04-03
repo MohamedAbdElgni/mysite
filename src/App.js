@@ -5,13 +5,16 @@ import "animate.css";
 import Header from "./pages/header/Header";
 import About from "./pages/about/About";
 import Skills from "./pages/skills/Skills";
+import Projects from "./pages/projects/Projects";
 
 function App() {
   return (
-    <div className="App bg-dark">
+    <div className="App ">
       <Header />
+
       <About />
       <Skills />
+      <Projects />
     </div>
   );
 }

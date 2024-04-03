@@ -4,8 +4,16 @@ import Animatediv from "../../components/Animatediv";
 function About() {
   return (
     <div
-      className="container-fluid bg-light about-wrapper"
-      style={{ minHeight: "25vh", position: "relative" }}
+      className="container-fluid bg-lightr"
+      style={{
+       
+        height: "fit-content",
+        position: "relative",
+        borderTop: "10px solid rgba(15, 15, 15, 0.822)",
+        textAlign: "center",
+        
+
+      }}
     >
       <div className="row h-100">
         <div className="col-md-4 d-flex justify-content-center align-items-center bg-light-subtle">
@@ -19,7 +27,7 @@ function About() {
           </Animatediv>
         </div>
 
-        <div className="col-md-8 right-sec">
+        <div className="col-md-8 right-sec bg-light-subtle">
           <div className="row">
             <Animatediv>
               <div className="col-12 d-flex justify-content-center align-items-center ">
