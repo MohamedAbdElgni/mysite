@@ -9,10 +9,10 @@ function Animatediv({ children }) {
     useEffect(() => {
         if (inView) {
             animation.start({
-                opacity: 1,
+                opacity: .9,
                 y: 0,
                 transition: {
-                    duration: 0.5,
+                    duration: 1,
                 },
             });
         } else {
