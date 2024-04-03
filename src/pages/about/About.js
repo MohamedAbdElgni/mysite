@@ -1,5 +1,6 @@
 import React from "react";
 import "./aboutstyle.css";
+import Animatediv from "../../components/Animatediv";
 function About() {
   return (
     <div
@@ -8,37 +9,45 @@ function About() {
     >
       <div className="row h-100">
         <div className="col-md-4 d-flex justify-content-center align-items-center bg-light-subtle">
-          <img
-            src="mypic.jpg"
-            alt="mypic"
-            className="shadow-lg animate__animated animate__jello"
-            style={{ borderRadius: "50%", maxWidth: "200px", height: "auto" }}
-          />
+          <Animatediv>
+            <img
+              src="mypic.jpg"
+              alt="mypic"
+              className="shadow-lg animate__animated animate__jello"
+              style={{ borderRadius: "50%", maxWidth: "200px", height: "auto" }}
+            />
+          </Animatediv>
         </div>
+
         <div className="col-md-8 right-sec">
           <div className="row">
-            <div className="col-12 d-flex justify-content-center align-items-center ">
-              <h3 className="display-4">About Me</h3>
-            </div>
+            <Animatediv>
+              <div className="col-12 d-flex justify-content-center align-items-center ">
+                <h3 className="display-4">About Me</h3>
+              </div>
+            </Animatediv>
           </div>
           <div className="row">
             <div className="col-12 d-flex justify-content-center align-items-center ">
               <p className="lead">
-                I am a full stack web developer. I have experience in Python,
-                Django, React, and PostgreSQL. I am currently working as a{" "}
-                <strong> Free Lancer</strong> and looking for a full-time job.
+                I am a full stack web developer. <strong>ITI graduate</strong> I
+                have experience in Python, Django, React, and PostgreSQL. I am
+                currently working as a <strong> Free Lancer</strong> and looking
+                for a full-time job.
               </p>
             </div>
-          </div>
-          <div className="row d-flex justify-content-center align-items-center pt-3">
-            <a
-              href="MohamedAhmedAbfElGani.pdf"
-              download="MohamedAhmedAbfElGani.pdf"
-              className="button-53 w-25"
-            >
-              CV
-            </a>
-          </div>
+          </div>{" "}
+          <Animatediv>
+            <div className="row d-flex justify-content-center align-items-center pt-3">
+              <a
+                href="MohamedAhmedAbfElGani.pdf"
+                download="MohamedAhmedAbfElGani.pdf"
+                className="button-53 w-25"
+              >
+                CV
+              </a>
+            </div>
+          </Animatediv>
         </div>
       </div>
     </div>
