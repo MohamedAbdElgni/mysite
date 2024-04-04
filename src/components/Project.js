@@ -1,25 +1,36 @@
 import React from "react";
 import { FaGithub } from "react-icons/fa";
+import { CiLink } from "react-icons/ci";
+
 import Animatediv from "./Animatediv";
 function Project({ props }) {
+ 
   return (
     <Animatediv>
-    <div class="tile">
-      <img src="https://images.unsplash.com/photo-1422393462206-207b0fbd8d6b?dpr=1&auto=format&crop=entropy&fit=crop&w=1500&h=1000&q=80" />
-      <div class="text">
-        <h2 class="animate-text">Project subtitle</h2>
-        <p class="animate-text">
-          project description 
-          sadsadsa
-          
-        </p>
-        <div class="ainmate-text link">
-        <FaGithub size="2em" class="icon"/>
+      <div className="tile">
+        <img
+          alt="project"
+          src={props.img}
+          style={{ width: "100%", height: "100%" }}
+          loading="lazy"
+        />
+        <div className="text">
+          <h2 className="animate-text">{props.name}</h2>
+          <p className="animate-text">{props.description}</p>
+          <div className="ainmate-text link">
+            <a href={props.github} target="_blank" rel="noreferrer">
+              <FaGithub size="2em" className="icon" />
+            </a>
+            {props.link !== "" ? (
+              <a href={props.link} target="_blank" rel="noreferrer">
+                <CiLink size="2em" className="icon" />
+              </a>
+            ) : (
+              ""
+            )}
+          </div>
         </div>
-
-        
       </div>
-    </div>
     </Animatediv>
   );
 }

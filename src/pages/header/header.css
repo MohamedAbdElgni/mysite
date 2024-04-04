@@ -49,3 +49,14 @@ a {
 a:hover {
   color: #7fe6e6;
 }
+
+@media screen and (max-width: 600px) {
+  .social-sec {
+    bottom: 10px !important;
+  }
+  .social-sec > div {
+    width: 100% !important;
+    padding: 50px  !important;
+    justify-content: space-between !important;
+  }
+}

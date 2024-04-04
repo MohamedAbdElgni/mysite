@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import ParticleComponent from "../../components/particles";
+//import ParticleComponent from "../../components/particles";
 import "./header.css";
 import {
   PiWhatsappLogo,
@@ -27,7 +27,7 @@ function Header() {
 
   const socialIcons = (
     <div
-      className="text-light  text-center d-flex justify-content-evenly social-icons animate__animated animate__fadeIn animate__delay-.5s"
+      className="text-light social-sec text-center d-flex justify-content-evenly social-icons animate__animated animate__fadeIn animate__delay-.5s"
       style={{
         position: "absolute",
         bottom: "18%",
