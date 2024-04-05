@@ -1,18 +1,16 @@
 import React from "react";
 import "./aboutstyle.css";
 import Animatediv from "../../components/Animatediv";
+import resume from "./MohamedAhmedAbdElGani_CV.pdf";
 function About() {
   return (
     <div
       className="container-fluid bg-lightr"
       style={{
-       
         height: "fit-content",
         position: "relative",
         borderTop: "10px solid rgba(15, 15, 15, 0.822)",
         textAlign: "center",
-        
-
       }}
     >
       <div className="row h-100">
@@ -48,9 +46,11 @@ function About() {
           <Animatediv>
             <div className="row d-flex justify-content-center align-items-center pt-3">
               <a
-                href="MohamedAhmedAbfElGani.pdf"
-                download="MohamedAhmedAbfElGani.pdf"
                 className="button-53 w-25"
+                href={resume}
+                target="_blank"
+                rel="noopener noreferrer"
+                download="MohamedAhmedAbdElGani_CV.pdf"
               >
                 CV
               </a>
