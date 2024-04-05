@@ -7,6 +7,8 @@ import About from "./pages/about/About";
 import Skills from "./pages/skills/Skills";
 import Projects from "./pages/projects/Projects";
 import Certs from "./pages/certficates/Certs";
+import HireMe from "./pages/hire/HireMe";
+import Footer from "./components/Footer";
 
 function App() {
   return (
@@ -16,7 +18,10 @@ function App() {
       <Skills />
       <Projects />
       <Certs />
+      <HireMe />
+      <Footer />
     </div>
+    
   );
 }
 

@@ -1,6 +1,7 @@
 import React from "react";
 import { Carousel } from "react-bootstrap";
 import "./certsStyles.css";
+//MohamedAhmedAbdElGani_CV.pdf
 function Certs() {
   const certficates = 10;
   // cert_n.png

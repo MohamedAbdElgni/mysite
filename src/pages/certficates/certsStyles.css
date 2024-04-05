@@ -20,4 +20,8 @@
 
     object-fit: contain;
   }
+
+  .formobile {
+    height: 70vh !important;
+  }
 }

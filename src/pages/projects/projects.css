@@ -10,7 +10,7 @@ body {
 }
 .tile {
   width: 380px;
-  height: 380px;
+  height: 325px;
   background-color: #3f4457;
   display: inline-block;
   background-size: cover;
@@ -31,7 +31,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  object-fit: calc(100% - 60px);
+  object-fit: cover;
   image-rendering: -moz-crisp-edges;
   image-rendering: -o-crisp-edges;
 }
