@@ -21,6 +21,7 @@ function Certs() {
               className="d-block w-100 cert-img"
               src={`cert_${i + 1}.png`}
               alt={`Cert-${i + 1}`}
+              loading="lazy"
             />
           </Carousel.Item>
         ))}

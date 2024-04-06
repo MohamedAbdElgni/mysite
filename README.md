@@ -17,7 +17,7 @@ This is a simple portfolio app built with React. It is a single page app that di
 
 This project is open source and available under the [MIT License](LICENSE).
 
-## Author
+## Audthor
 
 [Mohamed Ahmed]
 
