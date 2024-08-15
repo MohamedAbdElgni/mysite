@@ -38,7 +38,7 @@ function About() {
               <p className="lead">
                 I'm a full stack web developer.I have experience in Python,
                 Django, React, and PostgreSQL. I am currently working as a{" "}
-                <strong> Free Lancer</strong> and looking for a full-time job.
+                <strong> Full Stack Django Developer</strong> at{" "} <strong>Proact AI</strong>.
               </p>
             </div>
           </div>{" "}

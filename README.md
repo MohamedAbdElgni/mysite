@@ -13,6 +13,9 @@ This is a simple portfolio app built with React. It is a single page app that di
 2. Run `npm install`
 3. Run `npm start`
 
+## Deoployment on GH pages invoce the following command after merging this into main branch
+- `npm run deploy`
+
 ## License
 
 This project is open source and available under the [MIT License](LICENSE).
